@@ -4,4 +4,6 @@
 
 Written in AssemblyScript, compiled to WebAssembly, and optimized for speed.
 
+**0 dependencies**
+
 <small>Based on [`fastest-levenshtein`](https://github.com/ka-weihe/fastest-levenshtein) by *ka-weihe*.</small>
