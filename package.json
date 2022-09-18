@@ -1,5 +1,5 @@
 {
-  "name": "qlevenshtein",
+  "name": "qlevens",
   "version": "1.0.0",
   "description": "A lightning-fast implementation of the Levenshtein distance algorithm. Written in AssemblyScript, compiled to WebAssembly, and optimized for speed.",
   "scripts": {
