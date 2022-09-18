@@ -1,0 +1,49 @@
+{
+  "name": "qlevenshtein",
+  "version": "1.0.0",
+  "description": "A lightning-fast implementation of the Levenshtein distance algorithm. Written in AssemblyScript, compiled to WebAssembly, and optimized for speed.",
+  "scripts": {
+    "prepublishOnly": "npm run asbuild:release",
+    "test": "node tests",
+    "asbuild:debug": "asc src/index.ts --target debug",
+    "asbuild:release": "asc src/index.ts --target release",
+    "asbuild": "npm run asbuild:debug && npm run asbuild:release",
+    "start": "npx serve ."
+  },
+  "author": "hex2w <hex2w@proton.me>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hex2w/qlevenshtein.git"
+  },
+  "keywords": [
+    "levenshtein",
+    "levenshtein-wasm",
+    "levenshtein-distance",
+    "distance",
+    "algorithm",
+    "assemblyscript",
+    "wasm",
+    "webassembly",
+    "string",
+    "compare",
+    "fast",
+    "fastest",
+    "match",
+    "difference",
+    "text"
+  ],
+  "bugs": {
+    "url": "https://github.com/hex2w/fastest-levenshtein-wasm/issues"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.21.3"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./build/release.js",
+      "types": "./build/release.d.ts"
+    }
+  }
+}
