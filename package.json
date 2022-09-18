@@ -14,7 +14,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:hex2w/qlevenshtein.git"
+    "url": "git@github.com:hex2w/qlevens.git"
   },
   "keywords": [
     "levenshtein",
@@ -34,7 +34,7 @@
     "text"
   ],
   "bugs": {
-    "url": "https://github.com/hex2w/fastest-levenshtein-wasm/issues"
+    "url": "https://github.com/hex2w/qlevens/issues"
   },
   "devDependencies": {
     "assemblyscript": "^0.21.3"
