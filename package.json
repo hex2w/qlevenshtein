@@ -6,8 +6,8 @@
   "scripts": {
     "prepublishOnly": "npm run asbuild:release",
     "test": "node tests",
-    "asbuild:debug": "asc src/index.ts --target debug",
-    "asbuild:release": "asc src/index.ts --target release",
+    "asbuild:debug": "asc src/index.ts -b build/debug.wasm -t build/debug.wat --sourceMap --debug",
+    "asbuild:release": "asc src/index.ts -b build/release.wasm -t build/release.wat --sourceMap -O3",
     "asbuild": "npm run asbuild:debug && npm run asbuild:release",
     "start": "npx serve ."
   },
@@ -37,14 +37,14 @@
   "bugs": {
     "url": "https://github.com/hex2w/qlevens/issues"
   },
-  "devDependencies": {
-    "assemblyscript": "^0.21.3"
-  },
   "type": "module",
   "exports": {
     ".": {
       "import": "./build/release.js",
       "types": "./build/release.d.ts"
     }
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.21.3"
   }
 }
