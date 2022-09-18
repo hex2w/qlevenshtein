@@ -1,7 +1,8 @@
 {
   "name": "qlevens",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightning-fast implementation of the Levenshtein distance algorithm. Written in AssemblyScript, compiled to WebAssembly, and optimized for speed.",
+  "
   "scripts": {
     "prepublishOnly": "npm run asbuild:release",
     "test": "node tests",
