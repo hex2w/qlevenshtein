@@ -11,11 +11,11 @@
     "asbuild": "npm run asbuild:debug && npm run asbuild:release",
     "start": "npx serve ."
   },
-  "author": "hex2w <hex2w@proton.me>",
+  "author": "hexrw <hexrw@proton.me>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:hex2w/qlevens.git"
+    "url": "git@github.com:hexrw/qlevens.git"
   },
   "keywords": [
     "levenshtein",
@@ -35,7 +35,7 @@
     "text"
   ],
   "bugs": {
-    "url": "https://github.com/hex2w/qlevens/issues"
+    "url": "https://github.com/hexrw/qlevens/issues"
   },
   "type": "module",
   "exports": {
